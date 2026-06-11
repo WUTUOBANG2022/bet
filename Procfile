@@ -1,1 +1,1 @@
-web: bash start.sh
+web: sh -c "cd backend && python init_db.py && uvicorn app.main:app --host 0.0.0.0 --port $PORT"
